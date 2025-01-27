@@ -6,17 +6,17 @@ import { Line, Bar } from "react-chartjs-2";
 import {
   Chart as ChartJS,
   LineElement,
+  BarElement,
   CategoryScale,
   LinearScale,
   PointElement,
-  BarElement,
 } from "chart.js";
 ChartJS.register(
   LineElement,
+  BarElement,
   CategoryScale,
   LinearScale,
-  PointElement,
-  BarElement
+  PointElement
 );
 
 const Dashboard = () => {
@@ -30,12 +30,12 @@ const Dashboard = () => {
         <Card icon={<FaCog />} title="Settings" value="11" />
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-        <div className="bg-white p-4 rounded-lg shadow-md">
+        <div className="bg-white p-4 dark:bg-gray-800 rounded-lg shadow-md">
           <h3 className="text-lg font-semibold mb-4">Sales Data</h3>
           <Line data={dataLine} />
         </div>
-        <div className="bg-white p-4 rounded-lg shadow-md">
-          <h3 className="text-lg font-semibold mb-4">Inventory Data</h3>
+        <div className="bg-white p-4 dark:bg-gray-800 rounded-lg shadow-md">
+          <h3 className="text-lg font-semibold mb-4">Products Data</h3>
           <Bar data={dataBar} />
         </div>
       </div>

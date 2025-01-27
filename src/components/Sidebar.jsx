@@ -9,7 +9,7 @@ import {
 
 const Sidebar = () => {
   return (
-    <div className="bg-gray-100 text-grey-900 h-screen px-4 fixed w-16 md:w-64 border-r border-gray-300 ">
+    <div className="bg-gray-100 text-grey-900 h-screen px-4 fixed w-16 md:w-64 border-r border-gray-300 dark:border-gray-600 dark:bg-gray-900 dark:text-gray-100">
       <h1 className="text-2xl font-bold hidden md:block mt-5  text-center italic">
         KAY Shop
       </h1>
